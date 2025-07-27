@@ -10,7 +10,7 @@ import userRouter from "./routes/user.routes.js"
 
 const app=express()
 app.use(cors({
-    origin:"https://vocalnova-frontend.onrender.com",
+    origin:"*",
     credentials:true
 }))
 const port=process.env.PORT || 5000
@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.get("/", (req, res) => {
-  res.send("✅ VocalMind backend is up and running!");
+  res.send("✅ VocalNova backend is up and running!");
 });
 
 
