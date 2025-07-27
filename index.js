@@ -10,7 +10,7 @@ import userRouter from "./routes/user.routes.js"
 
 const app=express()
 app.use(cors({
-    origin:"https://vocalnova-frontend-2.onrender.com/",
+    origin:"https://vocalnova-frontend-2.onrender.com",
     credentials:true
 }))
 
