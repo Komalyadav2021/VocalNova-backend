@@ -10,9 +10,10 @@ import userRouter from "./routes/user.routes.js"
 
 const app=express()
 app.use(cors({
-    origin:"*",
+    origin:"https://vocalnova-frontend-2.onrender.com/",
     credentials:true
 }))
+
 const port=process.env.PORT || 5000
 app.use(express.json())
 app.use(cookieParser())
